@@ -2,221 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Welcome to Pack 504</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fb;
-      color: #222;
-    }
-    .page {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 24px 32px 32px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-    }
-    h1, h2, h3 {
-      margin: 0;
-      font-weight: 700;
-    }
-    p {
-      margin: 6px 0 10px;
-      line-height: 1.4;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      border-bottom: 4px solid #1f7ae0;
-      padding-bottom: 12px;
-      margin-bottom: 18px;
-    }
-    .header-logo {
-      width: 64px;
-      height: 64px;
-      background: #1f7ae0;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-weight: 800;
-      font-size: 20px;
-    }
-    .header-text h1 {
-      font-size: 26px;
-      letter-spacing: 0.04em;
-    }
-    .header-text h2 {
-      font-size: 14px;
-      font-weight: 500;
-      color: #555;
-      margin-top: 4px;
-    }
-
-    .section {
-      margin-bottom: 18px;
-      padding: 12px 14px;
-      border-radius: 10px;
-      background: #f9fbff;
-    }
-    .section-title {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      padding-bottom: 4px;
-      border-bottom: 2px solid rgba(0,0,0,0.06);
-    }
-
-    /* Color accents per section */
-    .section-who { border-left: 4px solid #2bb673; }
-    .section-what { border-left: 4px solid #1f7ae0; }
-    .section-comm { border-left: 4px solid #ff9f1c; }
-    .section-contact { border-left: 4px solid #00a6a6; }
-    .section-steps { border-left: 4px solid #e63946; }
-
-    .flex-row {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .flex-col {
-      flex: 1 1 0;
-      min-width: 220px;
-    }
-
-    .icon-row {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
-    .icon-card {
-      flex: 1 1 0;
-      min-width: 150px;
-      background: #ffffff;
-      border-radius: 8px;
-      padding: 8px 10px;
-      border: 1px solid rgba(0,0,0,0.05);
-    }
-    .icon-label {
-      font-weight: 600;
-      font-size: 13px;
-      margin-bottom: 2px;
-    }
-    .icon-desc {
-      font-size: 12px;
-      color: #555;
-    }
-
-    .photo {
-      width: 100%;
-      border-radius: 10px;
-      background: #d9e4ff;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #345;
-      font-size: 12px;
-      text-align: center;
-      padding: 8px;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 600;
-      background: #e8f1ff;
-      color: #1f7ae0;
-      margin-bottom: 4px;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 10px;
-      margin-top: 8px;
-    }
-    .contact-card {
-      background: #ffffff;
-      border-radius: 8px;
-      padding: 8px 10px;
-      border: 1px solid rgba(0,0,0,0.05);
-      font-size: 13px;
-    }
-    .contact-label {
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-    .contact-value {
-      font-size: 12px;
-      color: #555;
-    }
-
-    ul {
-      margin: 6px 0 4px 18px;
-      padding: 0;
-      font-size: 13px;
-    }
-
-    .footer-banner {
-      margin-top: 10px;
-      padding: 10px 12px;
-      border-radius: 10px;
-      background: linear-gradient(90deg, #ff9f1c, #ff6b6b);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      font-size: 13px;
-    }
-    .footer-banner strong {
-      font-size: 15px;
-    }
-    .footer-photo {
-      min-width: 120px;
-      height: 80px;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: 12px;
-    }
-
-    @media print {
-      body {
-        background: #ffffff;
-      }
-      .page {
-        box-shadow: none;
-        margin: 0;
-        max-width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="page">
-
-    <!-- HEADER -->
-    <div class="header">
-      <div class="header-logo">
-        504
+<body class="welcome-page">
+  <header>
+    <div class="site-brand">
+      <div class="site-logo">
+        <img src="images/504-logo.png" alt="Pack 504 logo" />
       </div>
-      <div class="header-text">
-        <h1>WELCOME TO PACK 504</h1>
-        <h2>A Family-Focused Cub Scout Program</h2>
+      <div class="site-text">
+        <h1>Welcome to Pack 504</h1>
+        <p>A Family-Focused Cub Scout Program</p>
       </div>
     </div>
+  </header>
+
+  <div class="page">
 
     <!-- WHO WE ARE -->
     <div class="section section-who">
@@ -246,8 +49,7 @@
         <div class="flex-col">
           <!-- Replace with real image if desired -->
           <div class="photo">
-            Photo of smiling Cub Scouts in uniform<br />
-            (replace this box with an &lt;img&gt; tag)
+            Photo of smiling Cub Scouts in uniform
           </div>
         </div>
       </div>
@@ -301,8 +103,8 @@
         <li>Meeting details and updates</li>
         <li>Sign-ups for activities and events</li>
       </ul>
-      <p style="font-size: 12px; color: #555;">
-        You’ll receive a link to join your den’s Spond group after you register.
+      <p class="small-note">
+        You’ll receive a link to join Spond group after you register.
       </p>
     </div>
 

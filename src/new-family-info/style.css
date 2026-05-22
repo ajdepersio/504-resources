@@ -293,6 +293,40 @@ h3 {
   border-left: 4px solid #ff9f1c;
 }
 
+.section-comm .flex-row {
+  align-items: center;
+}
+
+.section-comm .flex-col:last-child {
+  flex: 0 0 220px;
+}
+
+.section-comm .icon-card {
+  text-align: center;
+  padding: 10px;
+}
+
+.section-comm img {
+  display: block;
+  width: 132px;
+  max-width: 100%;
+  margin: 0 auto 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+}
+
+.section-comm .icon-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.section-comm .icon-card strong:last-child {
+  color: var(--blue-dark);
+}
+
 .section-contact {
   border-left: 4px solid #00a6a6;
 }
@@ -576,6 +610,10 @@ ul {
   .footer-banner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .section-comm .flex-col:last-child {
+    flex: 1 1 100%;
   }
 }
 

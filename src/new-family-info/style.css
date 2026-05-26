@@ -285,6 +285,18 @@ h3 {
   border-left: 4px solid #2bb673;
 }
 
+.section-who .flex-col:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-who .flex-col:last-child img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section-what {
   border-left: 4px solid #1f7ae0;
 }
@@ -363,6 +375,10 @@ h3 {
   border-left: 4px solid #2bb673;
 }
 
+.section-joys {
+  border-left: 4px solid #27ae60;
+}
+
 .section-how {
   border-left: 4px solid #1f7ae0;
 }
@@ -420,30 +436,31 @@ h3 {
   body.volunteering-page .page {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding: 0.1in 0.2in 0.1in;
+    gap: 6px;
+    padding: 0.12in 0.22in 0.1in;
   }
 
   body.volunteering-page .section {
     margin-bottom: 0;
-    padding: 5px 7px;
+    padding: 5px 8px;
   }
 
   body.volunteering-page .section-title {
-    font-size: 8pt;
+    font-size: 9pt;
     margin-bottom: 3px;
     padding-bottom: 1px;
   }
 
   body.volunteering-page p {
-    font-size: 7pt;
+    font-size: 7.5pt;
     margin: 1px 0;
-    line-height: 1.2;
+    line-height: 1.25;
   }
 
   body.volunteering-page ul {
-    font-size: 7pt;
-    margin: 2px 0 1px 12px;
+    font-size: 7.5pt;
+    margin: 2px 0 1px 13px;
+    line-height: 1.25;
   }
 
   body.volunteering-page .roles-row {
@@ -466,12 +483,13 @@ h3 {
   }
 
   body.volunteering-page .role-title {
-    font-size: 7pt;
-    margin-bottom: 0;
+    font-size: 7.5pt;
+    margin-bottom: 1px;
   }
 
   body.volunteering-page .role-desc {
-    font-size: 6.5pt;
+    font-size: 7pt;
+    line-height: 1.2;
   }
 }
 
@@ -725,6 +743,24 @@ ul {
   .badge,
   .footnote {
     font-size: 7pt;
+  }
+
+  body.welcome-page .section-comm .flex-col:last-child {
+    flex: 0 0 140px;
+  }
+
+  body.welcome-page .section-comm img {
+    width: 74px;
+    margin: 0 auto 4px;
+  }
+
+  body.welcome-page .section-comm .icon-card {
+    padding: 3px 4px;
+  }
+
+  body.welcome-page .section-comm .icon-card p {
+    font-size: 6.5pt;
+    line-height: 1.15;
   }
 
   .photo,
